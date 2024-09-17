@@ -8,7 +8,7 @@ const Header = () => {
       <nav>
         <div>
           <Link className="title" to="/">
-            Calculator
+           <h1 className="text">Calculator</h1> 
           </Link>
           <div className="menu" onClick={() => setIsMenuOpen(!isMenuOpen)} />
         </div>
