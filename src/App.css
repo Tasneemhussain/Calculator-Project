@@ -28,6 +28,12 @@ input {
 
 h1 {
   line-height: 40%;
+
+}
+
+.text{
+  color: black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .screen {
