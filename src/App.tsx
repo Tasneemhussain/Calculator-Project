@@ -15,6 +15,12 @@ function App() {
     const num2 = parseInt(b);
     setResult(num1 + num2);
   };
+  const handleClear = () => {
+    setFirstInput(""); // Clear first input
+    setSecondInput(""); // Clear second input
+    setResult(null); // Clear result
+  };
+
 
   return (
     <div className="calculator">
@@ -31,6 +37,10 @@ function App() {
         placeholder="second input"
       />
       <Button onClick={() => addNumbers(firstInput, secondInput)} />
+
+         {/* Clear Button */}
+      <Button onClick={handleClear} label="Clear" />
+
       <Screen result={result} />
     </div>
   );
